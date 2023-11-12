@@ -2,8 +2,9 @@
 #define SSD1306_SSD1306_H
 
 #include <string.h>
-#include "hardware/i2c.h"
+
 #include "frameBuffer/FrameBuffer.h"
+#include "hardware/i2c.h"
 
 namespace pico_ssd1306 {
     /// Register addresses from datasheet
@@ -127,6 +128,9 @@ namespace pico_ssd1306 {
 
         /// \brief Turns display on
         void turnOn();
+
+        uint8_t getWidth() const { return this->width; }
+        uint8_t getHeight() const { return this->height; }
     };
 
 }
