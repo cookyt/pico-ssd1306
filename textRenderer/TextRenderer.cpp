@@ -53,10 +53,10 @@ namespace pico_ssd1306 {
                                            opts);
                             break;
                         case Rotation::deg90:
-                          setScaledPixel(ssd1306,
-                                         -y + anchor_x + opts.font_height(),
-                                         x + anchor_y, opts);
-                          break;
+                            setScaledPixel(ssd1306,
+                                           -y + anchor_x + opts.font_height(),
+                                           x + anchor_y, opts);
+                            break;
                     }
                 }
                 b_seek++;
